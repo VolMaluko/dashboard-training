@@ -100,6 +100,9 @@ export default function SideBar() {
           </S.ItemList>
         ))}
       </S.CategoryList>
+      <S.LogoutButton>
+        <MdLogout /> Logout
+      </S.LogoutButton>
     </S.Main>
   );
 }

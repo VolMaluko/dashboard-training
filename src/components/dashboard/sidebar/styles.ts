@@ -49,3 +49,17 @@ export const ItemList = styled.li`
     margin-top: 0.5rem;
   }
 `;
+
+export const LogoutButton = styled.button`
+  padding: 1rem;
+  margin: 5px 0px;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  background: none;
+  border: none;
+  color: white;
+  width: 100%;
+`;

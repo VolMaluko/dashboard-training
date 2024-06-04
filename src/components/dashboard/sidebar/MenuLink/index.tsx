@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 
 export function MenuLink({ item }) {
   const pathname = usePathname();
-  console.log(pathname);
   return (
     <S.CustomLink href={item.path} isActive={pathname === item.path}>
       {item.icon}
