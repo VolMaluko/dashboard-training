@@ -19,7 +19,7 @@ export default function Transactions() {
             <S.TrTd>
               <S.User>
                 <Image src="/user.png" alt="" width={40} height={40} />
-                Bundão
+                Maluco
               </S.User>
             </S.TrTd>
             <S.TrTd>
@@ -32,7 +32,7 @@ export default function Transactions() {
             <S.TrTd>
               <S.User>
                 <Image src="/user.png" alt="" width={40} height={40} />
-                Bundão
+                Maluco
               </S.User>
             </S.TrTd>
             <S.TrTd>
@@ -45,7 +45,7 @@ export default function Transactions() {
             <S.TrTd>
               <S.User>
                 <Image src="/user.png" alt="" width={40} height={40} />
-                Bundão
+                Maluco
               </S.User>
             </S.TrTd>
             <S.TrTd>

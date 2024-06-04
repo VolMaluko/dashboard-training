@@ -1,4 +1,5 @@
 "use client";
+import globals from "../../styles/globals.css";
 import Layout from "./layout";
 import * as S from "./styles.ts";
 import RightBar from "../../components/rightbar/index";

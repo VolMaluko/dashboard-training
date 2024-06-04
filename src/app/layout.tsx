@@ -1,4 +1,5 @@
 "use client";
+import globals from "../../styles/globals.css";
 import { Poppins } from "next/font/google";
 import "../styles/globals.css";
 const poppins = Poppins({
