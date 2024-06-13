@@ -36,14 +36,14 @@ export default function ProductsPage() {
                   width={40}
                   height={40}
                 />
-                Cocaine
+                Trident
               </S.ProductImage>
             </S.StyledTd>
 
-            <S.StyledTd>Addicive for your nose!</S.StyledTd>
-            <S.StyledTd>R$ 540,98</S.StyledTd>
+            <S.StyledTd>Fresh and sweet</S.StyledTd>
+            <S.StyledTd>R$ 5,98</S.StyledTd>
             <S.StyledTd>12/12/1212</S.StyledTd>
-            <S.StyledTd>795kg</S.StyledTd>
+            <S.StyledTd>82</S.StyledTd>
 
             <S.StyledTd>
               <S.ButtonWrapper>
