@@ -1,5 +1,5 @@
-import * as S from "./styles.ts";
 import { MdSupervisedUserCircle } from "react-icons/md";
+import * as S from "./styles";
 
 export default function Card() {
   return (
@@ -10,7 +10,7 @@ export default function Card() {
         <S.TitleSpan>Total Users</S.TitleSpan>
         <S.NumberSpan>46843</S.NumberSpan>
         <S.DetailSpan>
-          <S.Positive>Fuck</S.Positive> u bitch
+          <S.Positive>15%</S.Positive> more users than last month!
         </S.DetailSpan>
       </S.Texts>
     </S.Container>

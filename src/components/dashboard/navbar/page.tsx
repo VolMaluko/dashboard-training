@@ -1,5 +1,4 @@
 "use client";
-import * as S from "./styles";
 import { usePathname } from "next/navigation";
 import {
   MdNotifications,
@@ -7,6 +6,7 @@ import {
   MdPublic,
   MdSearch,
 } from "react-icons/md";
+import * as S from "./styles";
 
 export default function NavBar() {
   const pathname = usePathname();

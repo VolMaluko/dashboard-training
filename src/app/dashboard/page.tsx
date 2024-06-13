@@ -1,11 +1,9 @@
 "use client";
-import globals from "../../styles/globals.css";
-import Layout from "./layout";
-import * as S from "./styles.ts";
-import RightBar from "../../components/rightbar/index";
 import Card from "../../components/card/index";
-import Transactions from "../../components/transactions/index";
 import Chart from "../../components/chart/index";
+import RightBar from "../../components/rightbar/index";
+import Transactions from "../../components/transactions/index";
+import * as S from "./styles";
 
 export default function Dashboard() {
   return (

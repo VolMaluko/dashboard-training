@@ -1,5 +1,5 @@
 "use client";
-import globals from "../../styles/globals.css";
+import StyledComponentsRegistry from "@/lib/registry";
 import { Poppins } from "next/font/google";
 import "../styles/globals.css";
 const poppins = Poppins({
@@ -13,7 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+      </body>
     </html>
   );
 }

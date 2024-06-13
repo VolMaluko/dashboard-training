@@ -1,20 +1,19 @@
 "use client";
-import * as S from "./styles";
-import { MenuLink } from "./MenuLink";
-import user from "../../../../public/user.png";
 import Image from "next/image";
 import {
-  MdDashboard,
-  MdSupervisedUserCircle,
-  MdShoppingBag,
-  MdAttachMoney,
-  MdWork,
   MdAnalytics,
-  MdPeople,
-  MdOutlineSettings,
+  MdAttachMoney,
+  MdDashboard,
   MdHelpCenter,
   MdLogout,
+  MdOutlineSettings,
+  MdPeople,
+  MdShoppingBag,
+  MdSupervisedUserCircle,
+  MdWork,
 } from "react-icons/md";
+import { MenuLink } from "./MenuLink";
+import * as S from "./styles";
 
 const menuItems = [
   {
@@ -82,18 +81,18 @@ const menuItems = [
 export default function SideBar() {
   return (
     <S.Main>
-      <S.User>
+      <S.UserImage>
         <Image src="/user.png" alt="" width="50" height="50" />
         <S.UserDetail>
-          <S.Username>Piroca Alada</S.Username>
+          <S.Username>Admin</S.Username>
           <S.UserType> Administrador </S.UserType>
         </S.UserDetail>
-      </S.User>
+      </S.UserImage>
 
       <S.CategoryList>
         {menuItems.map((category) => (
           <S.ItemList key={category.title}>
-            <span classname="Category">{category.title}</span>
+            <span className="Category">{category.title}</span>
             {category.list.map((item) => (
               <MenuLink item={item} key={item.title} />
             ))}

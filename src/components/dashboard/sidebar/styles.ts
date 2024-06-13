@@ -2,27 +2,27 @@ import styled from "styled-components";
 
 export const Main = styled.main`
   position: sticky;
-  top: 0rem;
-  left: 0rem;
-  bottom: 0rem;
-  height: 100dvh;
+  top: 40px;
 `;
 
-export const User = styled.div`
+export const UserImage = styled.div`
   display: flex;
   gap: 1.25rem;
   object-fit: cover;
+  margin-bottom: 20px;
 `;
 
 export const UserDetail = styled.div`
   display: flex;
   flex-direction: column;
+
 `;
 
 export const Username = styled.div`
   margin-bottom: 0.25rem;
   font-weight: 600;
   font-size: 22px;
+  
 `;
 
 export const UserType = styled.div`
@@ -61,5 +61,4 @@ export const LogoutButton = styled.button`
   background: none;
   border: none;
   color: white;
-  width: 100%;
 `;

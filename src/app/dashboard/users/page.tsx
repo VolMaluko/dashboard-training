@@ -4,24 +4,24 @@ import Search from "@/components/search";
 import Link from "next/link";
 import * as S from "./styles";
 
-export default function ProductsPage() {
+export default function UsersPage() {
   return (
     <S.Container>
       <S.Top>
-        <Search placeholder="Search for a product" />
-        <Link href="/dashboard/products/add">
-          <S.Button>Add New Product</S.Button>
+        <Search placeholder="Search for a user" />
+        <Link href="/dashboard/user/add">
+          <S.Button>Add New User</S.Button>
         </Link>
       </S.Top>
 
       <S.StyledTable>
         <S.StyledThead>
           <S.StyledTr>
-            <S.StyledTd>Title</S.StyledTd>
-            <S.StyledTd>Description</S.StyledTd>
-            <S.StyledTd>Price</S.StyledTd>
+            <S.StyledTd>Name</S.StyledTd>
+            <S.StyledTd>Email</S.StyledTd>
             <S.StyledTd>Created At</S.StyledTd>
-            <S.StyledTd>Stock</S.StyledTd>
+            <S.StyledTd>Role</S.StyledTd>
+            <S.StyledTd>Status</S.StyledTd>
             <S.StyledTd>Action</S.StyledTd>
           </S.StyledTr>
         </S.StyledThead>
@@ -29,21 +29,16 @@ export default function ProductsPage() {
         <S.StyledTBody>
           <S.StyledTr>
             <S.StyledTd>
-              <S.ProductImage>
-                <S.StyledImage
-                  src="/no-product.png"
-                  alt=""
-                  width={40}
-                  height={40}
-                />
-                Cocaine
-              </S.ProductImage>
+              <S.UserImage>
+                <S.StyledImage src="/user.png" alt="" width={40} height={40} />
+                John Doe
+              </S.UserImage>
             </S.StyledTd>
 
-            <S.StyledTd>Addicive for your nose!</S.StyledTd>
-            <S.StyledTd>R$ 540,98</S.StyledTd>
-            <S.StyledTd>12/12/1212</S.StyledTd>
-            <S.StyledTd>795kg</S.StyledTd>
+            <S.StyledTd>johndoe@john.com</S.StyledTd>
+            <S.StyledTd>69/69/6969</S.StyledTd>
+            <S.StyledTd>Admin</S.StyledTd>
+            <S.StyledTd>Active</S.StyledTd>
 
             <S.StyledTd>
               <S.ButtonWrapper>

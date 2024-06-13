@@ -1,15 +1,15 @@
 "use client";
-import * as S from "./styles.ts";
 import {
-  LineChart,
+  CartesianGrid,
+  Legend,
   Line,
+  LineChart,
+  ResponsiveContainer,
+  Tooltip,
   XAxis,
   YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
 } from "recharts";
+import * as S from "./styles";
 
 const data = [
   {
@@ -48,13 +48,13 @@ export default function Chart() {
   return (
     <S.Main>
       <S.StyledText>Weekly Recap</S.StyledText>
-      <ResponsiveContainer width="100%" height="90%">
+      <ResponsiveContainer width="90%" height="90%">
         <LineChart
-          width={500}
-          height={300}
+          width={450}
+          height={400}
           data={data}
           margin={{
-            top: 5,
+            top: 50,
             right: 30,
             left: 20,
             bottom: 5,
@@ -77,7 +77,7 @@ export default function Chart() {
             strokeDasharray="3 4 5 2"
           />
         </LineChart>
-      </ResponsiveContainer>
+      </ResponsiveContainer>{" "}
     </S.Main>
   );
 }

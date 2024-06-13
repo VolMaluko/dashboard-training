@@ -44,7 +44,7 @@ export const StyledTBody = styled.tbody`
 
 `;
 
-export const UserImage = styled.div`
+export const ProductImage = styled.div`
 display: flex;
 gap: 10px;
 align-items: center;

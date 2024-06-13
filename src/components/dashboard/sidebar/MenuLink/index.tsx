@@ -1,9 +1,7 @@
 "use client";
-import Link from "next/link";
-import * as S from "./styles";
-import page from "./page";
 import { usePathname } from "next/navigation";
-
+import * as S from "./styles";
+// @ts-ignore
 export function MenuLink({ item }) {
   const pathname = usePathname();
   return (

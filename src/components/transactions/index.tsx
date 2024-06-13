@@ -1,5 +1,5 @@
-import * as S from "./styles.ts";
 import Image from "next/image";
+import * as S from "./styles";
 
 export default function Transactions() {
   return (
@@ -19,7 +19,7 @@ export default function Transactions() {
             <S.TrTd>
               <S.User>
                 <Image src="/user.png" alt="" width={40} height={40} />
-                Maluco
+                John Doe
               </S.User>
             </S.TrTd>
             <S.TrTd>
@@ -32,7 +32,7 @@ export default function Transactions() {
             <S.TrTd>
               <S.User>
                 <Image src="/user.png" alt="" width={40} height={40} />
-                Maluco
+                John Doe
               </S.User>
             </S.TrTd>
             <S.TrTd>
@@ -45,7 +45,7 @@ export default function Transactions() {
             <S.TrTd>
               <S.User>
                 <Image src="/user.png" alt="" width={40} height={40} />
-                Maluco
+                John Doe
               </S.User>
             </S.TrTd>
             <S.TrTd>
