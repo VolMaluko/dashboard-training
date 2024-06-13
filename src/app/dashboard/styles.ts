@@ -21,8 +21,6 @@ export const Content = styled.div`
 
 export const MainDb = styled.main`
   display: flex;
-  flex: 3;
-  flex-direction: column;
   gap: 20px;
 `;
 
