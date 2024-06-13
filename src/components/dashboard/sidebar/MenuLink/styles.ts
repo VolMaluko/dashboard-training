@@ -1,6 +1,6 @@
 "use client";
-import styled from "styled-components";
 import Link from "next/link";
+import styled from "styled-components";
 
 interface ICustomLink {
   isActive: boolean;

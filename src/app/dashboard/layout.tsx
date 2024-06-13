@@ -1,15 +1,18 @@
 "use client";
-import * as S from "./styles";
-import { Main } from "./styles";
+import NavBar from "@/components/dashboard/navbar/page";
 import SideBar from "./../../components/dashboard/sidebar/page";
-import NavBar from "./../../components/dashboard/navbar/page";
+import * as S from "./styles";
 
-export default function Layout({ children }) {
+export default function Layout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <S.Main>
-      <S.Menu>
+      <S.MenuSide>
         <SideBar />
-      </S.Menu>
+      </S.MenuSide>
       <S.Content>
         <NavBar />
         {children}

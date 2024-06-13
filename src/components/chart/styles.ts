@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
-  height: 450px;
+  height: 550px;
   background-color: var(--bgSoft);
   padding: 1.25rem;
   border-radius: 0.8rem;
@@ -10,5 +10,4 @@ export const Main = styled.main`
 export const StyledText = styled.text`
   color: var(--textSoft);
   font-weight: 200;
-  margin-bottom: 20px;
 `;

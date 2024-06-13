@@ -19,7 +19,7 @@ export const Menu = styled.div`
   display: flex;
   align-items: center;
   gap: 1.25rem;
-`;
+  `;
 
 export const Search = styled.div`
   display: flex;

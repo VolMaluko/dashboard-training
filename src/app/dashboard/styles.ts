@@ -2,33 +2,42 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
+@media screen and (min-width: 769px) {
   display: flex;
-  flex: 3;
+  width: 100%;
+}
 `;
 
-export const Menu = styled.div`
+export const MenuSide = styled.div`
   flex: 1;
   background-color: var(--bgSoft);
   padding: 1.25rem;
-`;
+  min-height: 100vh;
+ `;
 
 export const Content = styled.div`
+ @media screen and (min-width: 769px) {
   flex: 4;
   padding: 1.25rem;
+} 
 `;
 
-// Aqui inicia-se a estilização do dashboard em si //
-
-export const MainDb = styled.main`
-  display: flex;
-  gap: 20px;
-`;
+// Dashboard //
 
 export const Wrapper = styled.main`
   display: flex;
   gap: 20px;
   margin-top: 20px;
+
 `;
+
+export const MainDb = styled.div`
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  gap: 20px;
+`;
+
 
 export const Cards = styled.div`
   display: flex;
@@ -37,5 +46,5 @@ export const Cards = styled.div`
 `;
 
 export const SideBar = styled.div`
-  display: flex;
-`;
+  flex: 1;
+`; 
