@@ -1,17 +1,25 @@
 "use client";
+import BasicModal from "@/components/modal";
 import Pagination from "@/components/pagination";
 import Search from "@/components/search";
 import Link from "next/link";
 import * as S from "./styles";
 
 export default function ProductsPage() {
+  const labels = ["Title", "Stock", "Color", "Size"];
+  const numerics = ["Price"];
+
   return (
     <S.Container>
       <S.Top>
         <Search placeholder="Search for a product" />
-        <Link href="/dashboard/products/add">
-          <S.Button>Add New Product</S.Button>
-        </Link>
+
+        <BasicModal
+          placeholder={"Add New Product"}
+          labels={labels}
+          title={"Add New Product"}
+          numerics={numerics}
+        />
       </S.Top>
 
       <S.StyledTable>

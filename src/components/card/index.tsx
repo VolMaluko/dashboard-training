@@ -7,10 +7,10 @@ export default function Card() {
       <MdSupervisedUserCircle size={24} />
 
       <S.Texts>
-        <S.TitleSpan>Total Users</S.TitleSpan>
-        <S.NumberSpan>46843</S.NumberSpan>
+        <S.TitleSpan>Total Clients</S.TitleSpan>
+        <S.NumberSpan>85499</S.NumberSpan>
         <S.DetailSpan>
-          <S.Positive>15%</S.Positive> more users than last month!
+          <S.Positive>15%</S.Positive> more clients than last month!
         </S.DetailSpan>
       </S.Texts>
     </S.Container>

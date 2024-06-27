@@ -3,15 +3,51 @@ import Pagination from "@/components/pagination";
 import Search from "@/components/search";
 import Link from "next/link";
 import * as S from "./styles";
+import ObjectBasicModal from "@/components/objectmodal";
+
+const labels = [
+  {
+    type: "Name",
+    example: "John Doe",
+  },
+  {
+    type: "E-mail",
+    example: "Johndoe@example.com",
+  },
+  {
+    type: "Role",
+    example: "Administrator",
+  },
+  {
+    type: "Country",
+    example: "Brazil",
+  },
+  {
+    type: "Age",
+    example: "35",
+  },
+  {
+    type: "CPF",
+    example: "111.111.111-11",
+  },
+  {
+    type: "CEP",
+    example: "11111-111",
+  },
+];
 
 export default function UsersPage() {
   return (
     <S.Container>
       <S.Top>
         <Search placeholder="Search for a user" />
-        <Link href="/dashboard/user/add">
-          <S.Button>Add New User</S.Button>
-        </Link>
+        <ObjectBasicModal
+          labels={labels}
+          placeholder={"Add New User"}
+          title={"Add New User"}
+          example={labels[0].example}
+          type={labels[0].type}
+        />
       </S.Top>
 
       <S.StyledTable>
@@ -42,7 +78,7 @@ export default function UsersPage() {
 
             <S.StyledTd>
               <S.ButtonWrapper>
-                <Link href="/">
+                <Link href="users/${[id]}">
                   <S.ButtonView>View</S.ButtonView>
                 </Link>
                 <Link href="/">

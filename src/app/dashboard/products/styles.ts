@@ -33,7 +33,7 @@ export const StyledThead = styled.thead `
 `;
 
 export const StyledTr = styled.tr`
-
+margin-left: 10px;
 `;
 
 export const StyledTd = styled.td`
@@ -76,4 +76,8 @@ color: var(--text);
 border: none;
 cursor: pointer;
 background-color: crimson;
+`;
+
+export const ProductDescription = styled.textarea`
+
 `;

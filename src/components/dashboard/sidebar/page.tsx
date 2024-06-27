@@ -92,7 +92,7 @@ export default function SideBar() {
       <S.CategoryList>
         {menuItems.map((category) => (
           <S.ItemList key={category.title}>
-            <span className="Category">{category.title}</span>
+            <span>{category.title}</span>
             {category.list.map((item) => (
               <MenuLink item={item} key={item.title} />
             ))}

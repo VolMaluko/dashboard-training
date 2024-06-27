@@ -16,8 +16,7 @@ body{
   background-color: var(--bg);
   color: var(--text);
   height: 100dvh;
-  max-height: 100dvh;
-
+  max-height: 100dvh;  
 }
 
 a{

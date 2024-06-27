@@ -15,14 +15,12 @@ export const UserImage = styled.div`
 export const UserDetail = styled.div`
   display: flex;
   flex-direction: column;
-
 `;
 
 export const Username = styled.div`
   margin-bottom: 0.25rem;
   font-weight: 600;
-  font-size: 22px;
-  
+  font-size: 22px;  
 `;
 
 export const UserType = styled.div`
