@@ -55,7 +55,7 @@ export default function ProductsPage() {
 
             <S.StyledTd>
               <S.ButtonWrapper>
-                <Link href="/">
+                <Link href="/dashboard/products/test">
                   <S.ButtonView>View</S.ButtonView>
                 </Link>
                 <Link href="/">

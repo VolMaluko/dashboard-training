@@ -78,7 +78,7 @@ export default function UsersPage() {
 
             <S.StyledTd>
               <S.ButtonWrapper>
-                <Link href="users/${[id]}">
+                <Link href="users/test">
                   <S.ButtonView>View</S.ButtonView>
                 </Link>
                 <Link href="/">

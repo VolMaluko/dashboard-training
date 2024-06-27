@@ -7,7 +7,7 @@ export default function SingleUserPage() {
     <S.Main>
       <S.InfoContainer>
         <S.ImageContainer>
-          <Image src="/user.png" alt="" fill/>
+          <Image src="/user.png" alt="" fill />
         </S.ImageContainer>
         John Doe
       </S.InfoContainer>
@@ -31,7 +31,18 @@ export default function SingleUserPage() {
           />
           <S.StyledLabel>Address</S.StyledLabel>
           <S.TextArea name="address" placeholder="New York" />
+          <S.StyledLabel>Role</S.StyledLabel>
+          <S.StyledInput type="text" name="role" placeholder="Admin" />
+          <S.StyledLabel>isActive?</S.StyledLabel>
+          <S.SelectStatus>
+            <S.StyledOptions value="general">Choose Satus</S.StyledOptions>
+            <S.StyledOptions value="active">Active</S.StyledOptions>
+            <S.StyledOptions value="inactive">Inactive</S.StyledOptions>
+          </S.SelectStatus>
         </S.StyledForm>
+        <S.ButtonContainer>
+          <S.StyledButton>Submit</S.StyledButton>
+        </S.ButtonContainer>
       </S.FormContainer>
     </S.Main>
   );
