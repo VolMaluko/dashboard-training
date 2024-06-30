@@ -1,8 +1,13 @@
-// @ts-nocheck
+"use client";
+
 import { MdSearch } from "react-icons/md";
 import * as S from "./styles";
 
-export default function Search({ placeholder }) {
+interface ISearch {
+  placeholder: string;
+}
+
+export default function Search({ placeholder }: ISearch) {
   return (
     <S.Container>
       <MdSearch />

@@ -1,9 +1,9 @@
-"use client";
 import Pagination from "@/components/pagination";
 import Search from "@/components/search";
 import Link from "next/link";
 import * as S from "./styles";
 import ObjectBasicModal from "@/components/objectmodal";
+import { fetchUsers } from "@/lib/data";
 
 const labels = [
   {
@@ -28,7 +28,7 @@ const labels = [
   },
   {
     type: "CPF",
-    example: "111.111.111-11",
+    example: "123.456.789-10",
   },
   {
     type: "CEP",
@@ -36,7 +36,8 @@ const labels = [
   },
 ];
 
-export default function UsersPage() {
+export default async function UsersPage() {
+  const users = await fetchUsers();
   return (
     <S.Container>
       <S.Top>
@@ -63,30 +64,37 @@ export default function UsersPage() {
         </S.StyledThead>
 
         <S.StyledTBody>
-          <S.StyledTr>
-            <S.StyledTd>
-              <S.UserImage>
-                <S.StyledImage src="/user.png" alt="" width={40} height={40} />
-                John Doe
-              </S.UserImage>
-            </S.StyledTd>
+          {users.map((user) => (
+            <S.StyledTr key={user.id}>
+              <S.StyledTd>
+                <S.UserImage>
+                  <S.StyledImage
+                    src={user.img || "/user.png"}
+                    alt="avatar-img"
+                    width={40}
+                    height={40}
+                  />
+                  {user.username}
+                </S.UserImage>
+              </S.StyledTd>
 
-            <S.StyledTd>johndoe@john.com</S.StyledTd>
-            <S.StyledTd>69/69/6969</S.StyledTd>
-            <S.StyledTd>Admin</S.StyledTd>
-            <S.StyledTd>Active</S.StyledTd>
+              <S.StyledTd>{user.email}</S.StyledTd>
+              <S.StyledTd>{user.createdAt?.toString().slice(4, 16)}</S.StyledTd>
+              <S.StyledTd>{user.isAdmin ? "Admin" : "Client"}</S.StyledTd>
+              <S.StyledTd>{user.isActive ? "Active" : "Inactive"}</S.StyledTd>
 
-            <S.StyledTd>
-              <S.ButtonWrapper>
-                <Link href="users/test">
-                  <S.ButtonView>View</S.ButtonView>
-                </Link>
-                <Link href="/">
-                  <S.ButtonDelete>Delete</S.ButtonDelete>
-                </Link>
-              </S.ButtonWrapper>
-            </S.StyledTd>
-          </S.StyledTr>
+              <S.StyledTd>
+                <S.ButtonWrapper>
+                  <Link href={`/dashboard/users/${user.id}`}>
+                    <S.ButtonView>View</S.ButtonView>
+                  </Link>
+                  <Link href="/">
+                    <S.ButtonDelete>Delete</S.ButtonDelete>
+                  </Link>
+                </S.ButtonWrapper>
+              </S.StyledTd>
+            </S.StyledTr>
+          ))}
         </S.StyledTBody>
       </S.StyledTable>
       <Pagination />

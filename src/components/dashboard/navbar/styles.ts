@@ -35,4 +35,5 @@ export const InputSearch = styled.input`
   background-color: transparent;
   border: none;
   color: var(--text);
+  outline: none;
 `;

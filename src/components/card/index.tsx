@@ -1,3 +1,4 @@
+"use client";
 import { MdSupervisedUserCircle } from "react-icons/md";
 import * as S from "./styles";
 

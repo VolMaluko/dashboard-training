@@ -1,3 +1,4 @@
+"use client";
 import { MdPlayCircleFilled } from "react-icons/md";
 import * as S from "./styles";
 

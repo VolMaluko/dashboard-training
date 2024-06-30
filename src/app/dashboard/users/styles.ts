@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import styled from "styled-components";
 
@@ -48,6 +49,7 @@ export const UserImage = styled.div`
 display: flex;
 gap: 10px;
 align-items: center;
+text-transform: capitalize;
 `;
 
 export const StyledImage = styled(Image)`
