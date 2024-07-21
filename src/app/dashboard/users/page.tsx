@@ -36,8 +36,14 @@ const labels = [
   },
 ];
 
-export default async function UsersPage() {
-  const users = await fetchUsers();
+interface IUsersPage {
+  searchParams: any;
+}
+
+export default async function UsersPage({ searchParams }: IUsersPage) {
+  const name = searchParams?.value || "";
+  const users = await fetchUsers(name);
+
   return (
     <S.Container>
       <S.Top>

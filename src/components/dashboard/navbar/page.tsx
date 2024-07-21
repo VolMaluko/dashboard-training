@@ -1,3 +1,4 @@
+"use client";
 import { usePathname } from "next/navigation";
 import {
   MdNotifications,
@@ -9,10 +10,10 @@ import * as S from "./styles";
 
 export default function NavBar() {
   const pathname = usePathname();
-
+  console.log(pathname.split("/"));
   return (
     <S.Main>
-      <S.NavTitle>{pathname.split("/").pop()}</S.NavTitle>
+      <S.NavTitle>{pathname.split("/")?.[2] || pathname.split("/")?.[1]}</S.NavTitle>
       <S.Menu>
         <S.Search>
           <MdSearch />

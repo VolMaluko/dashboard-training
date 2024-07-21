@@ -1,4 +1,3 @@
-"use client";
 import Card from "../../components/card/index";
 import Chart from "../../components/chart/index";
 import RightBar from "../../components/rightbar/index";

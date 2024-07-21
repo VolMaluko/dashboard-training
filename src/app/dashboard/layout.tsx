@@ -1,4 +1,3 @@
-"use client";
 import NavBar from "@/components/dashboard/navbar/page";
 import SideBar from "./../../components/dashboard/sidebar/page";
 import * as S from "./styles";

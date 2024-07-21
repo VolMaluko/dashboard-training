@@ -1,22 +1,36 @@
 "use client";
-import Tooltip from "@/components/tooltip";
 import * as S from "./styles";
-import Search from "@/components/search";
+import { CircleUserRound } from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
-  const tooltiptext = "No tem galantia";
-  const placeholder = "Digite o valor";
   return (
     <S.Main>
-      <S.WhateverJustSomething></S.WhateverJustSomething>
+      <S.LoginDiv>
+        <S.ButtonWrapper>
+          <S.ImageWrapper>
+            <Image src="/user.png" alt="" width={60} height={60} />
+          </S.ImageWrapper>
 
-      <S.Valor>
-        <S.Wrapper>
-          Price
-          <Tooltip tooltiptext={tooltiptext} />
-        </S.Wrapper>
-        <Search placeholder={placeholder} />
-      </S.Valor>
+          <S.DifferentLink href="/">
+            <S.Buttons>FAQ</S.Buttons>
+          </S.DifferentLink>
+          <S.DifferentLink href="/">
+            <S.Buttons>Support</S.Buttons>
+          </S.DifferentLink>
+          <S.DifferentLink href="/">
+            <S.Buttons>Learn More</S.Buttons>
+          </S.DifferentLink>
+          <S.DifferentLink href="/login">
+            <S.ButtonLogin>
+              <CircleUserRound />
+              Login
+            </S.ButtonLogin>
+          </S.DifferentLink>
+        </S.ButtonWrapper>
+      </S.LoginDiv>
+
+      <S.Wrapper></S.Wrapper>
     </S.Main>
   );
 }
